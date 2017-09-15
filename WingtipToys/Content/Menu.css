@@ -1,0 +1,79 @@
+﻿.logo {
+    text-align: center;
+    margin-bottom: 76px;
+}
+
+.dock {
+   
+}
+.dock ul {
+    /*display: inline-block;*/
+    float: left;
+    height: 460px;
+    width: 170px;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    /*background: rgba(0, 0, 0, 0.3);*/
+    /*padding-right: 76px;*/
+    background-image:url("./Images/menu-fond.png");
+    border-radius: 9px;
+}
+
+.dock ul li {
+    width: auto;
+    height: auto;
+    /*display: inline-block;*/
+    bottom: 0;
+    vertical-align: bottom;
+    margin-top: -43px;
+}
+
+.dock ul li a {
+    display: block;
+    height: 150px;
+    width: 150px;
+    position: relative;
+    -webkit-transition-property: width, height,margin-top;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-property: width, height,margin-top;
+    -o-transition-duration: 0.5s;
+    -moz-transition-property: width, height,margin-top;
+    -moz-transition-duration: 0.5s;
+    outline: 0;
+}
+
+.dock ul li a:hover {
+    width: 175px;
+    height: 175px;
+    margin-top: -50px;
+}
+
+.dock ul li a img {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border: none;
+    padding: 0px 0px 0px 35px;
+    margin-left:-10px;  
+}
+/*
+@media (max-width: 768px) {
+    .dock ul {
+        height: 120px;
+        width: 120px;
+    }
+    .dock ul li {
+        margin-top: -36px;
+    }
+    .dock ul li a {
+        height: 70px;
+        width: 70px;
+    }
+    .dock ul li a:hover {
+        width: 100px;
+        height: 100px;
+    }
+}
+*/

@@ -1,0 +1,107 @@
+﻿body {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    max-width: 1280px;
+    background-image:url("./Images/fond.png");
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 460px;
+}
+
+#content-center{
+    margin-left:200px;
+    height: 460px;
+    background-image:url("./Images/fond-center.png");
+    background-repeat:repeat-x;
+    border-radius: 9px;
+    overflow-y:scroll;
+    
+}
+
+
+header{
+    height: 200px;
+    text-align: left;
+    margin: 0px 30px 0px 30px;
+}
+
+.header-left{
+    display:inline;
+}
+
+
+.header-right{
+    display:inline;
+    float: right;
+    padding-top: 15px;
+    padding-right: 6px;
+    background-image:url("./Images/fond-login.png");
+    background-repeat: no-repeat;
+    width: 418px;
+    height: 100%;
+}
+.header-right ul,#logoutForm{
+    float: none !important;
+}
+
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+.product-img{
+    border: solid; 
+    height: 80px; 
+    width: 80px;
+}
+
+@media (max-width: 768px) {
+  .header-right{
+        float: none;
+        display: table-row-group;
+    }
+  header{
+      height:auto;
+  }
+  #content-center{
+    margin-left:0;
+    display: -webkit-inline-box;
+  }
+  .logoimg{
+    width:200px;    
+    }
+      
+}

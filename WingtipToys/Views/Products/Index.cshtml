@@ -1,0 +1,76 @@
+﻿@model IEnumerable<WingtipToys.Model.Products>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@if (ViewContext.HttpContext.User.IsInRole("admin"))
+{
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+}
+<table class="table">
+    <tr>
+        <th>
+            @*@Html.DisplayNameFor(model => model.ProductName)*@
+            Produit
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.Description)*@
+            Description
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.ImagePath)*@
+            Photo
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.UnitPrice)*@
+            Prix
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.Categories.CategoryName)*@
+            Catégorie
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @*@Html.DisplayFor(modelItem => item.ImagePath)*@
+            <img class="product-img" src="@Url.Content("~/Content/Upload/" + item.ImagePath)" / >
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UnitPrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Categories.CategoryName)
+        </td>
+        <td>
+           @if (ViewContext.HttpContext.User.IsInRole("admin"))
+           {
+                @Html.ActionLink("Edit", "Edit", new { id=item.ProductID }) <span>|</span>
+                @Html.ActionLink("Details", "Details", new { id=item.ProductID })    <span>|</span>
+                @Html.ActionLink("Delete", "Delete", new { id=item.ProductID })
+           }
+           else
+           {
+            @*<a href="/Products/?productID=<%#:Item.ProductID %>">*@
+                @Html.ActionLink("testAdd", "AddToCard", new { id = item.ProductID }, new { @class = "ajoutPanier" })
+                @*<img title="Ajouter au panier" src="@Url.Content("~/Content/Images/cadie.png")" />*@
+            @*</a>*@
+           }
+
+</td>
+    </tr>
+}
+
+</table>

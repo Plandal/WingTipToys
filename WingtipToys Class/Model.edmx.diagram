@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1bbd123ae83b4fba8b83e6d668f179cf" Name="Diagram1">
+        <EntityTypeShape EntityType="wingtiptoysModel.C__MigrationHistory" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="wingtiptoysModel.CartItems" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="wingtiptoysModel.Categories" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="wingtiptoysModel.OrderDetails" Width="1.5" PointX="3" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="wingtiptoysModel.Orders" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="wingtiptoysModel.Products" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="wingtiptoysModel.FK_dbo_CartItems_dbo_Products_ProductId" ManuallyRouted="false" />
+        <AssociationConnector Association="wingtiptoysModel.FK_dbo_Products_dbo_Categories_CategoryID" ManuallyRouted="false" />
+        <AssociationConnector Association="wingtiptoysModel.FK_dbo_OrderDetails_dbo_Orders_OrderId" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

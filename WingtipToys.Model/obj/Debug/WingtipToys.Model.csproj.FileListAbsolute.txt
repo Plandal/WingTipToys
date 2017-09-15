@@ -1,0 +1,9 @@
+C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys.Model\bin\Debug\WingtipToys.Model.dll.config
+C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys.Model\bin\Debug\WingtipToys.Model.dll
+C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys.Model\bin\Debug\WingtipToys.Model.pdb
+C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys.Model\bin\Debug\EntityFramework.dll
+C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys.Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys.Model\bin\Debug\EntityFramework.xml
+C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys.Model\obj\Debug\WingtipToys.Model.dll
+C:\Users\Nenex\Desktop\INSTA\dreamteam\WingtipToys.Model\obj\Debug\WingtipToys.Model.pdb
